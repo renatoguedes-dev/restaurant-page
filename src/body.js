@@ -9,7 +9,7 @@ export default function createMain() {
   paragraphOne.textContent = "Our coffee is the best coffee shop you'll find in the city. When you feel like drinking some coffee, come visit us and enjoy our delicious beverages."
 
   const image = document.createElement('img');
-  image.src = "../images/cappuccino.jpg"
+  image.src = "./images/cappuccino.jpg"
   image.alt = "Cappuccino being prepared"
 
   const paragraphTwo = document.createElement('p'); 

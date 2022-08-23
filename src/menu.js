@@ -13,7 +13,7 @@ function createMenu() {
   const divEspresso = document.createElement('div');
   div.classList.add('espresso');
   const espressoImg = document.createElement('img');
-  espressoImg.src = "../images/espresso.jpg"
+  espressoImg.src = "./images/espresso.jpg"
   espressoImg.alt = "a delicious espresso coffee"
   const espressoPrice = document.createElement('div');
   espressoPrice.textContent = "Espresso $ 4.00"
@@ -21,7 +21,7 @@ function createMenu() {
   const divLatte = document.createElement('div');
   div.classList.add('latte');
   const latteImg = document.createElement('img');
-  latteImg.src = "../images/latte.jpg"
+  latteImg.src = "./images/latte.jpg"
   latteImg.alt = "a latte with a rose drawn on the top"
   const lattePrice = document.createElement('div');
   lattePrice.textContent = "Latte $ 5.00"
@@ -29,7 +29,7 @@ function createMenu() {
   const divIcedCoffee = document.createElement('div');
   div.classList.add('iced-coffee');
   const icedCoffeeImg = document.createElement('img');
-  icedCoffeeImg.src = "../images/iced-coffee.jpg"
+  icedCoffeeImg.src = "./images/iced-coffee.jpg"
   icedCoffeeImg.alt = "iced coffee in a plastic cup"
   const icedCoffeePrice = document.createElement('div');
   icedCoffeePrice.textContent = "Iced Coffee $ 5.50"
@@ -37,7 +37,7 @@ function createMenu() {
   const divBagels = document.createElement('div');
   div.classList.add('bagels');
   const bagelsImg = document.createElement('img');
-  bagelsImg.src = "../images/bagels.jpg"
+  bagelsImg.src = "./images/bagels.jpg"
   bagelsImg.alt = "bagels in a basket"
   const bagelsPrice = document.createElement('div');
   bagelsPrice.textContent = "Bagels $ 6.00"

@@ -13,7 +13,7 @@ function createContact() {
   talkToUs.textContent = "Wanna talk to us?";
 
   const phoneImg = document.createElement('img');
-  phoneImg.src = "../images/phone-icon.png";
+  phoneImg.src = "./images/phone-icon.png";
   phoneImg.alt = "picture of a phone";
 
   contact.appendChild(div);
