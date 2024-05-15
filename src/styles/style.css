@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --header-bcg: #302c34;
+    --menu-bcg: #4a4d54;
+    --buttons-bcg: #ff3636;
+    --menu-card-btns: #ffe6a9;
+    --menu-card-unselected: #a1987f;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+    background-image: url(../assets/bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-bcg);
+    padding: 1rem 2rem;
+}
+
+.brand {
+    margin-left: 4rem;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+.nav button {
+    background-color: var(--header-bcg);
+    border: none;
+    color: white;
+    align-self: end;
+    position: relative;
+    top: -15%;
+    font-size: 20px;
+}
+
+.nav button:hover {
+    border-bottom: 1px solid white;
+}
+
+#content {
+    display: grid;
+    width: 100%;
+    margin: 6rem 0;
+}
+
+.home-container {
+    width: 320px;
+    margin-left: 6rem;
+}
+
+.home-container p {
+    margin: 2.5rem 0;
+}
+
+button.fake-button {
+    background-color: var(--buttons-bcg);
+    color: #ffffff;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button, .brand-text {
+    cursor: pointer;
+}
+
+.menu-container {
+    text-align: center;
+    background-color: var(--header-bcg);
+    width: 90%;
+    display: grid;
+    justify-self: center;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+}
+
+.menu-text {
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+
+.menu-options {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--menu-bcg);
+    border-radius: 20px;
+    width: 240px;
+    min-width: 240px;
+    padding: 1.2rem;
+}
+
+.pizza-picture img {
+    width: 220px;
+    position: relative;
+    top: -3%;
+    left: -3.5%;
+    margin-bottom: 1rem;
+}
+
+.pizza-description {
+    margin: 1.4rem 0;
+}
+
+.pizza-sizes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.pizza-sizes button {
+    background-color: var(--menu-card-btns);
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.pizza-cart-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.cart-icon {
+    background-color: var(--buttons-bcg);
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) sepia(0%) saturate(15%) hue-rotate(310deg) 
+            brightness(105%) contrast(106%);
+}
+
