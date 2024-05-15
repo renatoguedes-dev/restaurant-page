@@ -1,4 +1,5 @@
 import removeAllChildNodes from "./index.js";
+import bgimg from "../assets/bgimg.jpg"
 
 export default function createHome() {
     const content = document.querySelector('#content');
@@ -16,6 +17,9 @@ export default function createHome() {
     const button = document.createElement("button");
     button.classList.add("fake-button");
     button.textContent = "Make an Order";
+    button.addEventListener("click", () => {
+        alert("This is a fake website");
+    });
 
     headline.appendChild(h1);
     headline.appendChild(p);

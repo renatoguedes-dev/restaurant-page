@@ -1,8 +1,8 @@
 import removeAllChildNodes from "./index.js";
-import pizza1 from "./assets/pizza1.png"
-import pizza2 from "./assets/pizza2.png"
-import pizza3 from "./assets/pizza3.png"
-import shopping_cart from "./assets/shopping_cart.png"
+import pizza1 from "../assets/pizza1.png"
+import pizza2 from "../assets/pizza2.png"
+import pizza3 from "../assets/pizza3.png"
+import shopping_cart from "../assets/shopping_cart.png"
 
 
 export default function createMenu() {
@@ -97,6 +97,10 @@ function createCardOne() {
     cartIconButton.appendChild(cartIcon);
     pizzaCartPriceOne.appendChild(price);
 
+    cartIconButton.addEventListener("click", () => {
+        alert("This is a fake website")
+    })
+
     return menuCardOne;
 }
 
@@ -163,6 +167,10 @@ function createCardTwo() {
     cartIconButton.appendChild(cartIcon);
     pizzaCartPriceTwo.appendChild(price);
 
+    cartIconButton.addEventListener("click", () => {
+        alert("This is a fake website")
+    })
+
     return menuCardTwo;
 }
 
@@ -228,6 +236,11 @@ function createCardThree() {
     pizzaCartPriceThree.appendChild(cartIconButton);
     cartIconButton.appendChild(cartIcon);
     pizzaCartPriceThree.appendChild(price);
+
+
+    cartIconButton.addEventListener("click", () => {
+        alert("This is a fake website")
+    })
 
     return menuCardThree;
 }
